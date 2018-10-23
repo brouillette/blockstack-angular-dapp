@@ -1,0 +1,6 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<button *ngIf="!userIsSignedIn" (click)='signIn($event)'>Sign in with Blockstack</button>
+<button *ngIf="userIsSignedIn" (click)='signOut($event)'>Sign out of Blockstack</button>
+
+<router-outlet></router-outlet>
